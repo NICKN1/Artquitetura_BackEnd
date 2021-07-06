@@ -1,4 +1,5 @@
-﻿using Curso_Arquitetura_Backend.Models;
+﻿using Curso_Arquitetura_Backend.Filters;
+using Curso_Arquitetura_Backend.Models;
 using Curso_Arquitetura_Backend.Models.Usuarios;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,13 +21,19 @@ namespace Curso_Arquitetura_Backend.Controllers
 
         [HttpPost]
         [Route("logar")]
+        [ValidacaoModelStateCustomizado]
         public IActionResult Logar(Models.Usuarios.LoginViewModellInput loginViewModellInput)
         {
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(new ValidaCampoViewModelOutPut(ModelState.SelectMany(sm => sm.Value.Errors).Select(s => s.ErrorMessage)));
+            //}
             return Ok(loginViewModellInput);
         }
 
         [HttpPost]
         [Route("Registrar")]
+        [ValidacaoModelStateCustomizado]
         public IActionResult Registrar(Models.Usuarios.RegistroViewModellInput loginViewModellInput)
         {
             return Created("", loginViewModellInput);
