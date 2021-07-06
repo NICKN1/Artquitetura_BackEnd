@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend.csproj",
+        "projectName": "Curso Arquitetura Backend",
+        "projectPath": "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend.csproj",
+        "packagesPath": "C:\\Users\\irani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visual 2019 Componentes\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\irani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
