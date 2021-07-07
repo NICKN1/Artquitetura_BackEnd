@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso.Arquitetura.Backend.csproj": {}
+    "C:\\Users\\irani\\OneDrive\\Documentos\\GitHub\\Artquitetura_BackEnd\\Curso Arquitetura Backend\\Curso.Arquitetura.Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso.Arquitetura.Backend.csproj": {
+    "C:\\Users\\irani\\OneDrive\\Documentos\\GitHub\\Artquitetura_BackEnd\\Curso Arquitetura Backend\\Curso.Arquitetura.Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso.Arquitetura.Backend.csproj",
+        "projectUniqueName": "C:\\Users\\irani\\OneDrive\\Documentos\\GitHub\\Artquitetura_BackEnd\\Curso Arquitetura Backend\\Curso.Arquitetura.Backend.csproj",
         "projectName": "Curso.Arquitetura.Backend",
-        "projectPath": "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso.Arquitetura.Backend.csproj",
+        "projectPath": "C:\\Users\\irani\\OneDrive\\Documentos\\GitHub\\Artquitetura_BackEnd\\Curso Arquitetura Backend\\Curso.Arquitetura.Backend.csproj",
         "packagesPath": "C:\\Users\\irani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irani\\source\\repos\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\Curso Arquitetura Backend\\obj\\",
+        "outputPath": "C:\\Users\\irani\\OneDrive\\Documentos\\GitHub\\Artquitetura_BackEnd\\Curso Arquitetura Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual 2019 Componentes\\NuGetPackages"
@@ -44,6 +44,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.1.4, )"

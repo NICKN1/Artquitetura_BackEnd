@@ -26,3 +26,39 @@ C:\Users\irani\source\repos\Curso Arquitetura Backend\Curso Arquitetura Backend\
 C:\Users\irani\source\repos\Curso Arquitetura Backend\Curso Arquitetura Backend\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.pdb
 C:\Users\irani\source\repos\Curso Arquitetura Backend\Curso Arquitetura Backend\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.genruntimeconfig.cache
 C:\Users\irani\source\repos\Curso Arquitetura Backend\Curso Arquitetura Backend\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.exe
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.deps.json
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.runtimeconfig.json
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.runtimeconfig.dev.json
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.pdb
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.xml
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.csproj.AssemblyReference.cache
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.AssemblyInfoInputs.cache
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.AssemblyInfo.cs
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.csproj.CoreCompileInputs.cache
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\staticwebassets\Curso.Arquitetura.Backend.StaticWebAssets.Manifest.cache
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\staticwebassets\Curso.Arquitetura.Backend.StaticWebAssets.xml
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\scopedcss\bundle\Curso.Arquitetura.Backend.styles.css
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.RazorTargetAssemblyInfo.cache
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.csproj.CopyComplete
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.pdb
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\obj\Debug\netcoreapp3.1\Curso.Arquitetura.Backend.genruntimeconfig.cache
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\irani\OneDrive\Documentos\GitHub\Artquitetura_BackEnd\Curso Arquitetura Backend\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
