@@ -10,5 +10,6 @@ namespace Curso_Arquitetura_Backend.Business.Repositories
     {
         void Adicionar(Usuario usuario);
         void Commit();
+        Usuario ObterUsuario(string login);
     }
 }

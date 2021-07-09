@@ -1,5 +1,6 @@
 ﻿using Curso_Arquitetura_Backend.Business.Entites;
 using Curso_Arquitetura_Backend.Business.Repositories;
+using Curso_Arquitetura_Backend.Configurations;
 using Curso_Arquitetura_Backend.Filters;
 using Curso_Arquitetura_Backend.Infraestruture.Data;
 using Curso_Arquitetura_Backend.Infraestruture.Data.Repositories;
@@ -7,6 +8,7 @@ using Curso_Arquitetura_Backend.Models;
 using Curso_Arquitetura_Backend.Models.Usuarios;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
@@ -23,7 +25,13 @@ namespace Curso_Arquitetura_Backend.Controllers
     {
         
 
-        IUsuarioRepository _usuarioRepository;
+        private readonly IUsuarioRepository _usuarioRepository;
+        private readonly IAuthenticationService _authenticationService;
+        public UsuarioController(IUsuarioRepository usuarioRepository, IAuthenticationService authenticationService)
+        {
+            _usuarioRepository = usuarioRepository;  
+            _authenticationService = authenticationService;
+        }
 
         [SwaggerResponse(statusCode: 200, description: "Sucesso ao autenticar", Type = typeof(LoginViewModellInput))]
         [SwaggerResponse(statusCode: 400, description: "Campos Obrigatórios", Type = typeof(ValidaCampoViewModelOutPut))]
@@ -34,34 +42,21 @@ namespace Curso_Arquitetura_Backend.Controllers
         [ValidacaoModelStateCustomizado]
         public IActionResult Logar(Models.Usuarios.LoginViewModellInput loginViewModellInput)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest(new ValidaCampoViewModelOutPut(ModelState.SelectMany(sm => sm.Value.Errors).Select(s => s.ErrorMessage)));
-            //}
+            var usuario = _usuarioRepository.ObterUsuario(loginViewModellInput.Login);
+
+            if (usuario == null)
+            {
+                return BadRequest("Houve um erro ao tentar acessar.");
+            }
+
             var usuarioViewModelOutput = new UsuarioViewModelOutput()
             {
-                Codigo = 1,
-                Login = "Junior",
-                Email = "Junior.Arrais@gmail.com"
-            };
-
-            var secret = Encoding.ASCII.GetBytes("MzfsT&d9gprP>!9$Es(X!5g@;ef!5sbk:jH\\2.8ZP'qY#7");
-            var symmetricSecurityKey = new SymmetricSecurityKey(secret);
-            var securityTokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                    new Claim(ClaimTypes.NameIdentifier, usuarioViewModelOutput.Codigo.ToString()),
-                    new Claim(ClaimTypes.Name, usuarioViewModelOutput.Login.ToString()),
-                    new Claim(ClaimTypes.Email, usuarioViewModelOutput.Email.ToString())
-
-                }),
-                Expires = DateTime.UtcNow.AddDays(1),
-                SigningCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature)
-            };
-            var jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
-            var tokenGenerated = jwtSecurityTokenHandler.CreateToken(securityTokenDescriptor);
-            var token = jwtSecurityTokenHandler.WriteToken(tokenGenerated);
+                Codigo = usuario.Codigo,
+                Login = loginViewModellInput.Login,
+                Email = usuario.Email
+            }; 
+           
+            var token = _authenticationService.GerarToken(usuarioViewModelOutput);
 
             return Ok(new
             {

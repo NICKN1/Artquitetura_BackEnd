@@ -1,5 +1,6 @@
 ﻿using Curso_Arquitetura_Backend.Business.Entites;
 using Curso_Arquitetura_Backend.Business.Repositories;
+using System.Linq;
 
 namespace Curso_Arquitetura_Backend.Infraestruture.Data.Repositories
 {
@@ -21,6 +22,11 @@ namespace Curso_Arquitetura_Backend.Infraestruture.Data.Repositories
         public void Commit()
         {
             _contexto.SaveChanges();
+        }
+
+        public Usuario ObterUsuario(string login)
+        {
+            return _contexto.Usuario.FirstOrDefault(u => u.Login == login);
         }
     }
 }
