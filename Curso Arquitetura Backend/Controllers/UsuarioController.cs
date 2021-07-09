@@ -1,6 +1,8 @@
 ﻿using Curso_Arquitetura_Backend.Business.Entites;
+using Curso_Arquitetura_Backend.Business.Repositories;
 using Curso_Arquitetura_Backend.Filters;
 using Curso_Arquitetura_Backend.Infraestruture.Data;
+using Curso_Arquitetura_Backend.Infraestruture.Data.Repositories;
 using Curso_Arquitetura_Backend.Models;
 using Curso_Arquitetura_Backend.Models.Usuarios;
 using Microsoft.AspNetCore.Mvc;
@@ -19,7 +21,9 @@ namespace Curso_Arquitetura_Backend.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private object optionsBuilder;
+        
+
+        IUsuarioRepository _usuarioRepository;
 
         [SwaggerResponse(statusCode: 200, description: "Sucesso ao autenticar", Type = typeof(LoginViewModellInput))]
         [SwaggerResponse(statusCode: 400, description: "Campos Obrigatórios", Type = typeof(ValidaCampoViewModelOutPut))]
@@ -76,8 +80,9 @@ namespace Curso_Arquitetura_Backend.Controllers
         [ValidacaoModelStateCustomizado]
         public IActionResult Registrar(RegistroViewModellInput loginViewModellInput)
         {
+            /*
             var optionsBuilder = new DbContextOptionsBuilder<CursoDbContext>();
-            optionsBuilder.UseSqlServer("");
+            optionsBuilder.UseSqlServer("Server=localhostjuniorarrais.database.windows.net;Database=Curso;user=juniorarrais;password=arrais8936#");
 
             CursoDbContext contexto = new CursoDbContext(optionsBuilder.Options);
 
@@ -86,14 +91,16 @@ namespace Curso_Arquitetura_Backend.Controllers
             {
                 contexto.Database.Migrate();
             }
-
+            */
             var usuario = new Usuario();
             usuario.Login = loginViewModellInput.Login;
             usuario.Email = loginViewModellInput.Email;
             usuario.Senha = loginViewModellInput.Senha;
+            _usuarioRepository.Adicionar(usuario);
+            _usuarioRepository.Commit();
+
             
-            contexto.Usuario.Add(usuario);
-            contexto.SaveChanges();
+
 
             return Created("", loginViewModellInput);
         }

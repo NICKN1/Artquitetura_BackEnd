@@ -1,3 +1,5 @@
+using Curso_Arquitetura_Backend.Business.Repositories;
+using Curso_Arquitetura_Backend.Infraestruture.Data.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -60,6 +62,8 @@ namespace Curso_Arquitetura_Backend
                         ValidateAudience = false
                     };
                 });
+            
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
